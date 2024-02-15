@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Quiz - Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #d8bcbc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #2E86AB;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #ED553B;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #FF6F61;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Computer Quiz</h2>
+        <form action="/quiz" method="post">
+            <label>Which is the capital of Karnataka?</label>
+            <input type="text" name="karnataka"><br>
+            <label>Which is the capital of India?</label>
+            <input type="text" name="india"><br>
+            <label>Which is the most popular currency in the world?</label>
+            <input type="text" name="currency"><br>
+            <label>Which is the capital of Australia?</label>
+            <input type="text" name="sydney"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
